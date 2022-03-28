@@ -7,7 +7,6 @@ import (
 )
 
 func TestBubbleSortWorstCase(t *testing.T) {
-
 	// Initialization
 	els := []int{8, 9, 7, 4, 6}
 
