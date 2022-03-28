@@ -7,8 +7,14 @@ import (
 )
 
 func TestBubbleSortWorstCase(t *testing.T) {
+
+	// Initialization
 	els := []int{8, 9, 7, 4, 6}
+
+	// Execution
 	els = BubbleSort(els)
+
+	// Validation
 	assert.NotNil(t, els)
 	assert.EqualValues(t, len(els), 5, "Length of elements should be 5")
 	assert.EqualValues(t, els, []int{4, 6, 7, 8, 9})
